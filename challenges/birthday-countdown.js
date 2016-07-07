@@ -34,3 +34,10 @@
 */
 
 // YOUR CODE HERE
+var todaysDate = new Date();
+var futureDate = new Date(yyyy,mm,dd);
+
+function daysUntilDate() {
+  var oneDay = 24*60*60*1000;	// hours*minutes*seconds*milliseconds
+  var diffDays = Math.abs((aDate.getTime() - futureDate.getTime())/(oneDay));
+}
