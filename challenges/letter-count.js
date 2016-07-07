@@ -31,3 +31,31 @@
 */
 
 // YOUR CODE HERE
+var word = "apple";
+
+function letterCount() {
+  var wordArray = word.split(" ");
+  console.log(wordArray);
+  var sortedArray= wordArray.sort();
+  console.log(sortedArray);
+}
+
+var letter = null;
+var numberLetter = 0;
+
+for (var i=0; i < sortedArray.length; i++) {
+  if (sortedArray[i] !== letter) {
+    if (numberLetter > 0 ) {
+      console.log(letter + " " + numberLetter/sortedArray.length);
+    }
+    letter = sortedArray[i];
+    numberLetter = 1;
+  } else {
+    numberLetter += 1;
+  }
+}
+
+if (numberLetter > 0) {
+  console.log(letter + " " + numberLetter/sortedArray.length);
+}
+}
