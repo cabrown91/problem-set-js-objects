@@ -45,3 +45,8 @@
 */
 
 // YOUR CODE HERE
+var
+
+function parseQueryString(string) {
+  something.split()
+}
